@@ -16,6 +16,8 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    position: relative;
+    top: -100px;
 }
 
 
@@ -25,6 +27,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+    position: relative;
+    top: -80px;
 }
 
 /* ------------ */
