@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Rick&Morty</title>
+</head>
+
+<body>
+
+    <div class="logo-title">
+        <img src="https://1000logos.net/wp-content/uploads/2022/03/Rick-and-Morty.png" width="800px" height="300px"
+            alt="">
+    </div>
+    <div class="box-filtros">
+        <div class="form-floating">
+            <select class="form-select" id="gender">
+                <option selected>(Select a one option)</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+            <label for="gender">Filter for gender</label>
+        </div>
+
+        <div class="form-floating">
+            <select class="form-select" id="Status">
+                <option selected>(Select a one option)</option>
+                <option value="Alive">Alive</option>
+                <option value="Dead">Dead</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+            <label for="Status">Filter for Status</label>
+        </div>
+
+        <!-- <div class="form-floating">
+            <select class="form-select" id="Origin">
+                <option selected>(Select a one option)</option>
+                <option value="1Citadel of Ricks">1Citadel of Ricks</option>
+                <option value="1Earth (Replacement Dimension)">1Earth (Replacement Dimension)</option>
+                <option value="1Heist-Con">1Heist-Con</option>
+                <option value="1Interdimensional Cable">1Interdimensional Cable</option>
+                <option value="2Earth (Replacement Dimension)">2Earth (Replacement Dimension)</option>
+                <option value="Abadango">Abadango</option>
+                <option value="Alien Acid Plant">Alien Acid Plant</option>
+                <option value="Alien Day Spa">Alien Day Spa</option>
+                <option value="Alphabetrium">Alphabetrium</option>
+                <option value="Anatomy Park">Anatomy Park</option>
+                <option value="Avian Planet">Avian Planet</option>
+                <option value="Bepis 9">Bepis 9</option>
+                <option value="Birdperson's Consciousness">Birdperson's Consciousness</option>
+                <option value="Citadel of Ricks">Citadel of Ricks</option>
+                <option value="Defiance's Base">Defiance's Base</option>
+                <option value="Defiance's Ship">Defiance's Ship</option>
+                <option value="Dorian 5">Dorian 5</option>
+                <option value="Draygon">Draygon</option>
+                <option value="Earth (C-137)">Earth (C-137)</option>
+                <option value="Earth (C-500A)">Earth (C-500A)</option>
+                <option value="Earth (Chair Dimension)">Earth (Chair Dimension)</option>
+                <option value="Earth (Evil Rick's Target Dimension)">Earth (Evil Rick's Target Dimension)</option>
+                <option value="Earth (Fascist Dimension)">Earth (Fascist Dimension)</option>
+                <option value="Earth (Fascist Shrimp Dimension)">Earth (Fascist Shrimp Dimension)</option>
+                <option value="Earth (Fascist Teddy Bear Dimension)">Earth (Fascist Teddy Bear Dimension)</option>
+                <option value="Earth (Giant Telepathic Spiders Dimension)">Earth (Giant Telepathic Spiders Dimension)
+                </option>
+                <option value="Earth (Phone Dimension)">Earth (Phone Dimension)</option>
+                <option value="Earth (Pizza Dimension)">Earth (Pizza Dimension)</option>
+                <option value="Earth (Replacement Dimension)">Earth (Replacement Dimension)</option>
+                <option value="Earth (Wasp Dimension)">Earth (Wasp Dimension)</option>
+                <option value="Fantasy World">Fantasy World</option>
+                <option value="Ferkus 9">Ferkus 9</option>
+                <option value="Forbodulon Prime">Forbodulon Prime</option>
+                <option value="Froopyland">Froopyland</option>
+                <option value="Gaia">Gaia</option>
+                <option value="Galactic Federation Prison">Galactic Federation Prison</option>
+                <option value="Gazorpazorp">Gazorpazorp</option>
+                <option value="Gear World">Gear World</option>
+                <option value="Giant's Town">Giant's Town</option>
+                <option value="Globaflyn">Globaflyn</option>
+                <option value="Glorzo Asteroid">Glorzo Asteroid</option>
+                <option value="Gorgon Quadrant">Gorgon Quadrant</option>
+                <option value="Gramuflack">Gramuflack</option>
+                <option value="Greasy Grandma World">Greasy Grandma World</option>
+                <option value="Hamster in Butt World">Hamster in Butt World</option>
+                <option value="Heistotron Base">Heistotron Base</option>
+                <option value="Hell">Hell</option>
+                <option value="Hideout Planet">Hideout Planet</option>
+                <option value="Immortality Field Resort">Immortality Field Resort</option>
+                <option value="Interdimensional Cable">Interdimensional Cable</option>
+                <option value="Interdimensional Customs">Interdimensional Customs</option>
+                <option value="Jerryboree">Jerryboree</option>
+                <option value="Kyle's Teenyverse">Kyle's Teenyverse</option>
+                <option value="Mega Gargantuan Kingdom">Mega Gargantuan Kingdom</option>
+                <option value="Merged Universe">Merged Universe</option>
+                <option value="Midland Quasar">Midland Quasar</option>
+                <option value="Monogatron Mothership">Monogatron Mothership</option>
+                <option value="Morty’s Story">Morty’s Story</option>
+                <option value="Mount Space Everest">Mount Space Everest</option>
+                <option value="Mr. Goldenfold's dream">Mr. Goldenfold's dream</option>
+                <option value="Narnia Dimension">Narnia Dimension</option>
+                <option value="Near-Duplicate Reality">Near-Duplicate Reality</option>
+                <option value="Non-Diegetic Alternative Reality">Non-Diegetic Alternative Reality</option>
+                <option value="Normal Size Bug Dimension">Normal Size Bug Dimension</option>
+                <option value="Nuptia 4">Nuptia 4</option>
+                <option value="NX-5 Planet Remover">NX-5 Planet Remover</option>
+                <option value="Pawn Shop Planet">Pawn Shop Planet</option>
+                <option value="Planet Squanch">Planet Squanch</option>
+                <option value="Plopstar">Plopstar</option>
+                <option value="Pluto">Pluto</option>
+                <option value="Post-Apocalyptic Earth">Post-Apocalyptic Earth</option>
+                <option value="Purge Planet">Purge Planet</option>
+                <option value="Resort Planet">Resort Planet</option>
+                <option value="Rick and Two Crows Planet">Rick and Two Crows Planet</option>
+                <option value="Rick's Battery Microverse">Rick's Battery Microverse</option>
+                <option value="Rick's Memories">Rick's Memories</option>
+                <option value="Ricks’s Story">Ricks’s Story</option>
+                <option value="Roy: A Life Well Lived">Roy: A Life Well Lived</option>
+                <option value="Signus 5 Expanse">Signus 5 Expanse</option>
+                <option value="Snake Planet">Snake Planet</option>
+                <option value="Snuffles' Dream">Snuffles' Dream</option>
+                <option value="Space">Space</option>
+                <option value="Space Tahoe">Space Tahoe</option>
+                <option value="St. Gloopy Noops Hospital">St. Gloopy Noops Hospital</option>
+                <option value="Story Train">Story Train</option>
+                <option value="Testicle Monster Dimension">Testicle Monster Dimension</option>
+                <option value="The Menagerie">The Menagerie</option>
+                <option value="Tickets Please Guy Nightmare">Tickets Please Guy Nightmare</option>
+                <option value="Unity's Planet">Unity's Planet</option>
+                <option value="unknown">unknown</option>
+                <option value="Venzenulon 7">Venzenulon 7</option>
+                <option value="Vindicator's Base">Vindicator's Base</option>
+                <option value="Worldender's lair">Worldender's lair</option>
+                <option value="Z. Q. P. D.">Z. Q. P. D.</option>
+                <option value="Zeep Xanflorp's Miniverse">Zeep Xanflorp's Miniverse</option>
+                <option value="Zigerion's Base>Zigerion's Base">Zigerion's Base>Zigerion's Base</option>
+            </select>
+                <label for="Origin">Filter for Origin</label>
+        </div> -->
+    </div>
+
+    <section class="contenedor" id="container">
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
